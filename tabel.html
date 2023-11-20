@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contoh Tabel HTML dengan CSS</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<style>
+    /* Pengaturan border-collapse jenis,ukuran serta warna huruf secara keseluruhan tabel */
+table{
+    padding-left: center;
+    border-collapse:collapse;
+    font:normal normal 12px Verdana,Arial,Sans-Serif;
+    color:#333333;
+    margin-top:70px;
+}
+/* Mengatur warna latar, warna teks, ukruan font dan jenis bold (tebal) pada header tabel */
+table th {
+    background:#00BFFF;
+    color:#DCDCDC;
+    font-weight:bold;
+    font-size:14px;
+}
+/* Mengatur border dan jarak/ruang pada kolom */
+table th,
+table td {
+    vertical-align:top;
+    padding:5px 10px;
+    border:1px solid #696969;
+}
+/* Mengatur warna baris */
+table tr {
+    background:#F5FFFA;
+}
+/* Mengatur warna baris genap (akan menghasilkan warna selang seling pada baris tabel) */
+table tr:nth-child(even) {
+    background:#F0F8FF;
+}
+    </style>
+    <body>
+        <table align="center" border="1" width="50%">
+            <tr> <th>No</th><th>NIK</th> <th>Nama</th><th>Jurusan</th></tr>
+            <tr> <td>1</td><td>125456780</td> <td>Setiawan Dimas</td> <td>Teknik Informatika</td></tr>
+            <tr> <td>2</td><td>135410264</td> <td>Erika Sanjaya</td>  <td>Sistem Informasi</td></tr>
+            <tr> <td>3</td><td>115789794</td> <td>Budi Prasetyo</td>  <td>Komputerisasi Akuntansi</td></tr>
+            <tr> <td>4</td><td>125534844</td> <td>Yunita Kristiani</td> <td>Teknik Komputer</td></tr>
+            <tr> <td>5</td><td>135497393</td> <td>Andi Kurniawan</td>  <td>Manajemen Informatika</td></tr>
+        </table>              
+    </body>
+</html>
